@@ -19,51 +19,83 @@ html {
 
 body {
   margin: 0;
+}
+
+section {
+  display: block;
   background-color: #e5c30a;
 }
 
-img {
+section .wrapper {
   display: block;
-  width: 100%;
 }
+
+.wrapper {
+  margin: 0;
+  max-width: 45em;
+}
+
  .img-flex {
-   display: flex;
-   flex-wrap: wrap;
-    max-width: 45em;
- }
+    width: 100%;
+    display: block;
+}
+
+.section-letter {
+  max-width: 45em;
+}
+
+.section-icon {
+  max-width: 45em;
+}
 
  section h2 {
   font-size: 1.5rem;
  }
 
  section p {
-
+  margin-bottom: 0;
  }
 
 
 @media only screen and (min-width: 20em) {
 
+  img {
+    width: 8.5em;
+  }
+
   .img-flex {
-    display: flex;
-    flex-wrap: wrap;
+    padding-top: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .section-body {
-    margin: 1.4rem;
+    margin: 0 1.4rem;
   }
 
   h2 {
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   p {
     margin-top: 0;
+    padding-bottom: 1.4rem;
   }
 
 }
 
 @media only screen and (min-width: 25em) {
 
+  img {
+    width: 9.2em;
+  }
+
+  .img-flex {
+    padding-top: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 }
 
@@ -72,6 +104,10 @@ img {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  img {
+    width: 4em;
   }
 
 
