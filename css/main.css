@@ -19,13 +19,46 @@ html {
 
 body {
   margin: 0;
+  background-color: #e5c30a;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+ .img-flex {
+   display: flex;
+   flex-wrap: wrap;
+    max-width: 45em;
+ }
 
+ section h2 {
+  font-size: 1.5rem;
+ }
+
+ section p {
+
+ }
 
 
 @media only screen and (min-width: 20em) {
 
+  .img-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-body {
+    margin: 1.4rem;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
 
 }
 
