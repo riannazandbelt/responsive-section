@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3 'Noto Sans', sans-serif;
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -22,7 +22,8 @@ body {
 }
 
 section {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #e5c30a;
 }
 
@@ -35,27 +36,28 @@ section .wrapper {
   max-width: 45em;
 }
 
- .img-flex {
-    width: 100%;
-    display: block;
+.img-flex {
+  width: 100%;
+  display: block;
 }
 
 .section-letter {
-  max-width: 45em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .section-icon {
-  max-width: 45em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
- section h2 {
+section h2 {
   font-size: 1.5rem;
- }
+}
 
- section p {
+section p {
   margin-bottom: 0;
- }
-
+}
 
 @media only screen and (min-width: 20em) {
 
@@ -65,8 +67,12 @@ section .wrapper {
 
   .img-flex {
     padding-top: 1.2rem;
-    width: 90%;
-    margin: 0 auto;
+  }
+
+  .section-icon,
+  .section-letter {
+    align-items: center;
+    justify-content: space-around;
   }
 
   .section-body {
@@ -110,6 +116,9 @@ section .wrapper {
     width: 4em;
   }
 
+  .section-icon {
+    order: 1000;
+  }
 
 }
 
@@ -119,7 +128,6 @@ section .wrapper {
     font-size: 120%;
     line-height: 1.5;
   }
-
 
 }
 
