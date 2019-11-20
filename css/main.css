@@ -98,12 +98,21 @@ section p {
     line-height: 1.5;
   }
 
+  .wrapper {
+    max-width: 100em;
+    padding: .75rem;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
+  }
+
+  .img-flex {
+    width: 20%;
   }
 
 }
