@@ -103,6 +103,10 @@ section p {
     padding: .75rem;
   }
 
+  section {
+    padding: 0;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -111,8 +115,9 @@ section p {
     font-size: 130%;
   }
 
-  .img-flex {
-    width: 20%;
+  .section-letter,
+  .section-icon {
+    width: 16%;
   }
 
 }
